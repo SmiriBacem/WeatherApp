@@ -1,0 +1,49 @@
+<div class="bg">
+    <div clas="row">
+        <div class="col-12">
+            <div>
+                <input type="text" [(ngModel)]="location"  class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                <button type="button" (click) ="myClickFunction()"> Envoyer</button>
+            </div>
+            <div class="row">
+                <div class="col-12" *ngIf='Url1'>
+                    <iframe id="inlineFrameExample" title="Inline Frame Example" 
+                    [src]='Url1' height="400px" width="auto">
+                    </iframe>
+                </div>
+            </div>
+            <!--<div class="row">
+                <div class="col-6">
+                    <h3>Location</h3>
+                </div>
+                <div class="col-6">
+                    <img alt="insert picture here" src="http://www.freepngclipart.com/download/cloud/6690-white-cloud-no-png-images.png" height="5  0px" >
+                </div>
+            </div>-->
+           <!-- <div class="row">
+                <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">Location</th>
+                        <th scope="col"><img alt="insert picture here" src="http://www.freepngclipart.com/download/cloud/6690-white-cloud-no-png-images.png" height="50px" ></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Los Angelos</th>
+                        <td>24°C</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Las Vegas</th>
+                        <td>24°C</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">San francissco</th>
+                        <td>24°C</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>-->
+        </div>
+    </div>
+</div>
